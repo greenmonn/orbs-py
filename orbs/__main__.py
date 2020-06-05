@@ -1,5 +1,5 @@
 import sys
-from orbs.orbs import ORBSlicer
+from orbs.orbs_for_vue import ORBSlicer
 
 
 def main():
@@ -12,9 +12,6 @@ def main():
 
     print(argv)
     orbs = ORBSlicer()
-
-    if argv[0][:-4] == 'test':
-        orbs.set_pytest
 
     filepath = argv[0]
     arguments = argv[1:]
